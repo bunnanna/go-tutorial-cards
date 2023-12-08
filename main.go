@@ -2,6 +2,9 @@ package main
 
 func main() {
 	cards := newDeck()
-	cards = append(cards, "6 ha")
+	cards, hand := deal(cards, 5)
+	hand.print()
 	cards.print()
+
+
 }
